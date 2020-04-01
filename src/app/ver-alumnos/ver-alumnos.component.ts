@@ -40,7 +40,7 @@ export class VerAlumnosComponent implements OnInit {
       fecha : '',
       idalumno : ''
   };
-  constructor(private apiService: ApiService, private modalService: NgbModal, private router: Router) {
+  constructor(private apiService:ApiService, private modalService: NgbModal, private router: Router) {
     this.obtenerAlumnos();
     this.obtenerRfids();
     this.obtenerAsistencias();
