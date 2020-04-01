@@ -1,0 +1,30 @@
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Tomar Asistencia</h2>
+                        <div class="form-group">
+                        
+                        
+                     <label>Deslice su tarjeta:</label>
+                     <br>
+                     <br>
+                     <form (ngSubmit)="addAsistencia()" ngNativeValidate>
+                      <div class="form-group">
+                        
+                        <input type="text" name="email" [(ngModel)]="rfid.codigo" class="form-control" required>
+                      </div>
+                      <br>
+                      <div class="form-group">
+                        
+                     
+                  
+                        <div class="p-t-30">
+                            <button class="btn btn--radius btn--green" type="submit">Tomar Asistencia</button>
+                        </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>

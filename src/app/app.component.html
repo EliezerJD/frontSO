@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm  navbar-dark bg-dark" *ngIf="router.url !== '/login'">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/add">Agregar Alumnos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="/addrfid">Agregar RFID´S</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/veralumnos">Ver Alumnos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="/verrfid">Ver RFID´S</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="/asignarrfid">Asignar RFID</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="/verasistencia">Ver Asistencia</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="/asignarasistencia">Tomar Asistencia</a>
+    </li>
+    <li class="nav-item derecha">
+      <a class="nav-link" (click)="logout()">Cerrar sesión</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

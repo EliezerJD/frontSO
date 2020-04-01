@@ -1,0 +1,32 @@
+<div class="container col-md-12">
+<br>
+<h2 class="center">RFID'S</h2>  
+<div class="table-responsive table-container">  
+  <table class="table table-dark table-hover table-striped">  
+    <thead class="thead-light">  
+      <tr>  
+        <th>ID</th>  
+        <th>Código</th>
+        <th>Estatus</th>
+        <th>Alumno</th>
+        <th>Acción</th> 
+      </tr>  
+    </thead>  
+    <tbody>  
+      <tr *ngFor="let data of datas"> 
+        <td>{{data.id}}</td> 
+        <td>{{data.codigo}}</td>
+        <td>{{data.status}}</td>
+        <td>{{data.alumno}}</td>
+        <td>  
+          <button (click)="deleteRfid(data.id, data.idalumno, data.alumno)" class="btn btn-danger">Borrar</button> 
+        </td>  
+      </tr>  
+    </tbody>  
+  </table>  
+</div> 
+
+
+
+
+ 

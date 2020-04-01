@@ -1,0 +1,35 @@
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Asignar RFID</h2>
+                        <div class="form-group">
+                        
+                        
+                     <label>Alumno:</label>
+                     <br>
+         			<select [(ngModel)]="alumnomodel">
+                <option *ngFor="let alumno of alumnosnew.reverse()"  [value]="alumno.id">
+                  {{alumno.nombre+" "+alumno.ap_pat+" "+alumno.ap_mat}}
+                </option>  
+              </select>
+
+                    
+                      <br>
+                      <br>
+
+                      <label>RFID:</label>
+                     <br>
+                      <select [(ngModel)]="rfidmodel">
+                <option *ngFor="let rfid of rfidsnew.reverse()"  [value]="rfid.id">
+                  {{rfid.codigo}}
+                </option>  
+              </select>
+                        <div class="p-t-30">
+                            <button class="btn btn--radius btn--green" (click)="asignar(alumnomodel, rfidmodel)" type="submit">ASIGNAR</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
