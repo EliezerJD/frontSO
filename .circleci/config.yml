@@ -16,8 +16,12 @@ jobs:
        # Lint the source code
       - run:
           name: Linting
-          command: npm run lint
-          
+          command: npm run lintAA
+    # Test the source code
+      - run:
+         name: Testing
+         command: npm run test --no-watch --no-progress
+        
          workflows:
             version: 2
             # the test workflow
