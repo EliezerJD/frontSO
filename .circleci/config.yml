@@ -17,20 +17,3 @@ jobs:
       - run:
           name: Linting
           command: npm run lint
-    # Test the source code
-      - run:
-         name: Testing
-         command: npm run test --no-watch --no-progress
-        
-         workflows:
-            version: 2
-            # the test workflow
-            test_workflow:
-                jobs:
-                    - deploy:
-                        filters:
-                            branches:
-                                only:
-                                    - develop
-                                    - staging
-                                    - master
