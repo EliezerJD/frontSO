@@ -17,9 +17,7 @@ jobs:
       - run:
           name: Linting
           command: npm run lint
-    # Test the source code
-   
-        
+          
          workflows:
             version: 2
             # the test workflow
